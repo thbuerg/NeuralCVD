@@ -1,0 +1,70 @@
+# @package experiment.feature_set.CVDCoreVariables
+categorical:
+  basics: [
+    'age_at_recruitment',
+    'ethnic_background',
+    'townsend_deprivation_index_at_recruitment',
+    'sex'
+  ]
+  questionnaire: [
+    'overall_health_rating',
+    'smoking_status',
+  ]
+one_hot_enc:
+  basics: [
+    'age_at_recruitment',
+    'ethnic_background_0.0',
+    'ethnic_background_1.0',
+    'ethnic_background_2.0',  # na 2 -> 5
+    'ethnic_background_3.0',
+    'ethnic_background_4.0',
+    'townsend_deprivation_index_at_recruitment',
+    'sex'
+  ]
+  questionnaire: [
+    'overall_health_rating_0.0',
+    'overall_health_rating_1.0',
+    'overall_health_rating_2.0',
+    'overall_health_rating_3.0',
+    'smoking_status_0.0',
+    'smoking_status_1.0',
+    'smoking_status_2.0'
+  ]
+general:
+  pgs: []
+  measurements: [
+    'body_mass_index_bmi',
+    'weight',
+    "standing_height",
+    'systolic_blood_pressure',
+    'diastolic_blood_pressure'
+    ]
+  labs: [
+    "cholesterol",
+    "hdl_cholesterol",
+    "ldl_direct",
+    "triglycerides"
+    ]
+  family_history: [
+    'fh_heart_disease',
+    ]
+  diagnoses: [
+    "myocardial_infarction",
+    "stroke",
+    'diabetes1',
+    'diabetes2',
+    'chronic_kidney_disease',
+    'atrial_fibrillation',
+    'migraine',
+    'rheumatoid_arthritis',
+    'systemic_lupus_erythematosus',
+    'severe_mental_illness',
+    'erectile_dysfunction',
+    ]
+  medications: [
+    "statins",
+    "antihypertensives",
+    "ass",
+    "atypical_antipsychotics",
+    "glucocorticoids"
+    ]

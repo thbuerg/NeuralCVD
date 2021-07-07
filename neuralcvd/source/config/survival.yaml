@@ -1,0 +1,21 @@
+setup:
+  project_name: CardioRS/benchmarks
+  experiment_name: benchmarks
+  tags: 210228_Paper_full
+trainer:
+  default_root_dir: /data/analysis/ag-reils/ag-reils-shared/cardioRS/results/models
+  gpus: -1
+  precision: 16
+  val_check_interval: 1.0
+  overfit_batches: 0.0
+  fast_dev_run: False
+experiment:
+  monitor: Ctd_0.9
+  label: MACE
+  event: ["MACE_event"]
+  duration: ["MACE_event_time"]
+  datamodule: UKBBDatamodule
+  cohort_definition: {"train":"NMR_FLAG==True&M_MACE==False&statins==False", "valid":"NMR_FLAG==True&M_MACE==False&statins==False", "test":"NMR_FLAG==True&M_MACE==False&statins==False"}
+  feature_set: AgeSex
+  features_yaml: features/${experiment.feature_set}.yaml
+  tabular_filepath: /data/analysis/ag-reils/ag-reils-shared/cardioRS/data/3_datasets_post/210521_metabolomics_log1p

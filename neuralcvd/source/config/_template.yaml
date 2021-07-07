@@ -1,0 +1,27 @@
+setup:
+  project_name: CardioRS/Dumpster
+  experiment_name: template
+  tags: template
+trainer:
+  default_root_dir: /data/analysis/ag-reils/ag-reils-shared/cardioRS/results/models
+  gpus: -1
+  precision: 16
+  stochastic_weight_avg: True
+  val_check_interval: 1.0
+  overfit_batches: 0.0
+  fast_dev_run: False
+experiment:
+  label: MACE
+  event: ${experiment.label}_event
+  duration: ${experiment.label}_event_time
+  datamodule: UKBBDatamodule
+  features: CVDCoreVariables
+  features_yaml: features/${experiment.features}.yaml
+  tabular_filepath: /data/analysis/ag-reils/ag-reils-shared/cardioRS/data/3_datasets_post/210226_cvd_gp_full_cluster
+  n_events: 1
+  learning_rate: 0.01
+  batch_size: 1024
+  num_workers : 8
+
+
+
