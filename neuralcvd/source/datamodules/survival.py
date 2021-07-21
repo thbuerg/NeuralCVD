@@ -111,7 +111,7 @@ class BaseDataModule(pl.LightningDataModule):
             return DataLoader(self.test_ds, batch_size=self.batch_size,
                               num_workers=self.num_workers, shuffle=False)
         else:
-            return DataLoader(self.get_batched_ds(self.valid_ds),
+            return DataLoader(self.get_batched_ds(self.test_ds),
                               num_workers=self.num_workers, pin_memory=True, collate_fn=BatchedDS.default_collate,
                               shuffle=False)
 
