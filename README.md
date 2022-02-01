@@ -4,9 +4,7 @@
 
 **Neural network-based integration of polygenic and clinical information: Development and validation of a prediction model for 10 year risk of major adverse cardiac events in the UK Biobank cohort**
 
-<!--
-[![Paper](http://img.shields.io/badge/paper-arxiv.1001.2234-B31B1B.svg)](https://www.nature.com/articles/nature14539)
--->
+[![Paper](https://img.shields.io/badge/Paper-tbd-red)](https://www.thelancet.com/journals/landig/article/PIIS2589-7500(21)00249-1/fulltext)
 
 </div>
  
@@ -63,10 +61,14 @@ bash experiments/run_NeuralCVD_S.sh
 
 ## Citation   
 ```
-@article{thisonecoolstory,
-  title={Neural network-based integration of polygenic and clinical information: Development and validation of a prediction model for 10 year risk of major adverse cardiac events in the UK Biobank cohort},
-  author={Jakob Steinfeldt, Thore Buergel},
-  journal={tbd},
-  year={2021}
+@article{steinfeldt2022neural,
+  title={Neural network-based integration of polygenic and clinical information: development and validation of a prediction model for 10-year risk of major adverse cardiac events in the UK Biobank cohort},
+  author={Steinfeldt, Jakob and Buergel, Thore and Loock, Lukas and Kittner, Paul and Ruyoga, Greg and zu Belzen, Julius Upmeier and Sasse, Simon and Strangalies, Henrik and Christmann, Lara and Hollmann, Noah and others},
+  journal={The Lancet Digital Health},
+  volume={4},
+  number={2},
+  pages={e84--e94},
+  year={2022},
+  publisher={Elsevier}
 }
 ```  
