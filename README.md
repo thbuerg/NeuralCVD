@@ -4,7 +4,7 @@
 
 **Neural network-based integration of polygenic and clinical information: Development and validation of a prediction model for 10 year risk of major adverse cardiac events in the UK Biobank cohort**
 
-[![Paper](https://img.shields.io/badge/Paper-tbd-red)](https://www.thelancet.com/journals/landig/article/PIIS2589-7500(21)00249-1/fulltext)
+[![Paper](https://img.shields.io/badge/TheLancet-DigitalHealth-informational)](https://www.thelancet.com/journals/landig/article/PIIS2589-7500(21)00249-1/fulltext)
 
 </div>
  
